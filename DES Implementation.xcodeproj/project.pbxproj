@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E0AC38D2B8A74A0005ECF0E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AC38C2B8A74A0005ECF0E /* main.c */; };
+		6E0AC38D2B8A74A0005ECF0E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AC38C2B8A74A0005ECF0E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6E0AC3892B8A74A0005ECF0E /* DES Implementation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DES Implementation"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E0AC38C2B8A74A0005ECF0E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6E0AC38C2B8A74A0005ECF0E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		6E0AC38B2B8A74A0005ECF0E /* DES Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				6E0AC38C2B8A74A0005ECF0E /* main.c */,
+				6E0AC38C2B8A74A0005ECF0E /* main.cpp */,
 			);
 			path = "DES Implementation";
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E0AC38D2B8A74A0005ECF0E /* main.c in Sources */,
+				6E0AC38D2B8A74A0005ECF0E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

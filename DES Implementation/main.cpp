@@ -5,10 +5,10 @@
 //  Created by Marven Cesar on 2/24/24.
 //
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
-}
+int main() {
+    
+    cout << "Test\n";
+};
