@@ -45,23 +45,35 @@ bitset<64>generateRandomKey() {
 bitset<56> pc1(const bitset<64>& key){
     bitset<56> permutedKey;
     for(int i = 0; i < 56; ++i){
+        // PC1[i] - 1 because our table is 1-indexed but bitset is 0-indexed
         permutedKey[55 - i] = key[64-PC1[i]];
     }
     return permutedKey;
 }
 
+string plaintextToBinary(const string& plaintext){
+    string binaryString;
+    for(char c : plaintext){
+        bitset<8> bits(c);
+        binaryString += bits.to_string();
+    }
+    return binaryString;
+    
+}
 
 int main() {
     int bits;
-    
+    string binaryString;
     cout <<"Welcome to the Data Encryption Standard Program\n";
     cout <<"Please enter the message you would like to encrypte: ";
-    cin >> plaintext;
+    getline(cin, plaintext); // getline allows space in input
     cout <<"Message recieved: " << plaintext<< "\n";
+    binaryString = plaintextToBinary(plaintext);
+    cout << "Binary representation of text: " << binaryString << "\n ";
     bitset<64>j = generateRandomKey();
     cout << "KEY: " << j;
     bitset<56>k = pc1(j);
-    cout << "\n After pc-1 KEY: " << k;
+    cout << "\nAfter pc-1 KEY: " << k;
     
 
     
